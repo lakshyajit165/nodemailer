@@ -24,7 +24,7 @@ app.get('/', (req,res) => {
 app.post('/send', (req,res) => {
 	
     if(!req.body.name || !req.body.company || !req.body.email || !req.body.phone || !req.body.message){
-        res.render('contact',{msg1:'Please fill up all the fields!'});
+        res.render('contact',{msg2:'Please fill up all the fields!'});
     }else{
 
             const output = `
